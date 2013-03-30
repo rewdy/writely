@@ -16,12 +16,6 @@
  */
 ?>
 
-<?php /* Display navigation to next/previous pages when applicable */ ?>
-<?php if ( $wp_query->max_num_pages > 1 ) : ?>
-		<?php next_posts_link( __( '&larr; Older posts', 'bpbase' ) ); ?>
-		<?php previous_posts_link( __( 'Newer posts &rarr;', 'bpbase' ) ); ?>
-<?php endif; ?>
-
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() ) : ?>
 		<h2 class="bad"><?php _e( 'Not Found', 'bpbase' ); ?></h2>
@@ -136,6 +130,8 @@
 
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
-				<?php next_posts_link( __( '&larr; Older posts') ); ?>
-				<?php previous_posts_link( __( 'Newer posts &rarr;') ); ?>
+<div id="directional_links">
+	<?php next_posts_link( __( '&larr; Older posts') ); ?>
+	<?php previous_posts_link( __( 'Newer posts &rarr;') ); ?>
+</div>
 <?php endif; ?>
