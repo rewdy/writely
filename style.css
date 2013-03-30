@@ -211,9 +211,6 @@ article h1 a:hover,
 article h2 a:hover {
 	text-decoration:underline;
 }
-article p {
-	text-align: justify;
-}
 article .entry_date {
 	position:absolute;
 	top:-0.9em;
