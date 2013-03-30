@@ -399,20 +399,28 @@ button:hover {
 }
 
 /* pagination & directionals */
-#directional_links {
+#directional_links,
+#pagination {
 	margin-bottom:3em;
 	border-top:1px solid #ccc;
 	height:2.7em;
 }
-#directional_links a {
+#directional_links a,
+#pagination div.older,
+#pagination div.newer {
 	display:block;
 	width:50%;
 	padding:0.5em 0;
 }
-#directional_links a[rel=prev] {
+#pagination a {
+	display:block;
+}
+#directional_links a[rel=prev],
+#pagination div.older {
 	float:left;
 }
-#directional_links a[rel=next] {
+#directional_links a[rel=next],
+#pagination div.newer {
 	float:right;
 	text-align: right;
 }

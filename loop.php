@@ -131,7 +131,7 @@
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
 <div id="directional_links">
-	<?php next_posts_link( __( '&larr; Older posts') ); ?>
-	<?php previous_posts_link( __( 'Newer posts &rarr;') ); ?>
+	<div class="older"><?php next_posts_link( __( '&larr; Older posts') ); ?></div>
+	<div class="newer"><?php previous_posts_link( __( 'Newer posts &rarr;') ); ?></div>
 </div>
 <?php endif; ?>
