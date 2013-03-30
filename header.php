@@ -16,7 +16,7 @@
 	/*
 	 * Print the <title> tag based on what is being viewed.
 	 */
-	wp_title(' &#x2605;', true, 'right');
+	wp_title(' &ndash;', true, 'right');
 
 	bloginfo('name');
 
