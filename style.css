@@ -1,0 +1,421 @@
+/*
+Theme Name: Writely Theme
+Theme URI: http://rewdy.com
+Description: A simple theme designed for blogs that want the emphasis on the content.
+Version: 1.0
+Author: Andrew Meyer
+Author URI: http://rewdy.com
+Tags: simple, text, serif, minimal, white, type, typography
+
+Hope you love it.
+*/
+body {
+	margin:4em auto;
+	padding:1em;
+	max-width:48em;
+	background-color:#f3f2ee;
+	color:#333;
+	font-family:'Lora', Georgia, serif;
+	line-height:1.7em;
+	position: relative;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin:0 0 1em;
+	font-weight:400;
+}
+h1 {
+	font-size:2.6em;
+	margin:1.5em 0;
+	text-align:center;
+}
+h2,
+h3#reply-title {
+	font-size:1.6em;
+}
+h1 em, h2 em {
+	background-color:#ccc;
+}
+h4 {
+	font-weight:700;
+}
+p, ul, ol, table, article {
+	margin:0 0 1em;
+}
+blockquote {
+	font-size:0.95em;
+	color:#888;
+	font-style:italic;
+}
+abbr {
+	border-bottom:1px dotted #ccc;
+}
+code {
+	font-size:12px;
+	font-family:Consolas, "Andale Mono", monospace;
+	font-style:normal;
+	background-color:#fff;
+}
+code.block {
+	display:block;
+	padding:1em;
+	margin-bottom:1em;
+	white-space: pre;
+}
+table {
+	width:100%;
+}
+table th {
+	text-align:left;
+	font-weight:700;
+}
+.help {
+	color:#666;
+	font-style:italic;
+}
+
+/* a tiny bit of html5 goodness */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+label {
+}
+span.required {
+	color:#c00;
+}
+span.input_holder {
+	display:block;
+}
+input[type=text], input[type=password], textarea, select {
+	padding:5px;
+}
+input[type=button], input[type=submit], input[type=reset] {
+	padding:5px 10px;
+}
+
+/* Links */
+a {
+	color:#387AD6;
+}
+a:hover {
+	/*color:#4291FF;*/
+	color:#000;
+}
+
+/* Elements */
+#title {
+	text-align:center;
+	font-size:2em;
+	padding-bottom:1em;
+	border-bottom:1px solid #ccc;
+}
+#title a {
+	color:inherit;
+	text-decoration:none;
+}
+
+#jump_link {
+	position:absolute;
+	display:block;
+	top:-10em;
+	left:0;
+	padding:0.2em 0.5em;
+	background-color:#333;
+	color:#fff;
+	text-decoration:none;
+	opacity:0;
+	border-radius:2px;
+	transition:all 0.2s ease-out;
+	-webkit-transition:all 0.2s ease-out;
+	-moz-transition:all 0.2s ease-out;
+}
+#jump_link:focus {
+	top:0;
+	opacity:1;
+}
+
+ul#nav_list {
+	padding:0.5em 0;
+	margin:0 0 1em 0;
+	border-bottom:1px solid #ccc;
+	text-align:center;
+}
+ul#nav_list li {
+	margin:0;
+	padding:0;
+	display:inline;
+	list-style:none;
+}
+ul#nav_list li a {
+	display:inline-block;
+	padding:0.2em 1em;
+	color:#ccc;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition:color 0.2s ease-out;
+	-webkit-transition:color 0.2s ease-out;
+	-moz-transition:color 0.2s ease-out;
+}
+ul#nav_list li a:hover,
+ul#nav_list li.current_page_item a {
+	color:#666;
+}
+
+ul#footer_nav_list {
+	margin:0;
+	text-align:center;
+}
+ul#footer_nav_list li {
+	margin:0;
+	padding:0;
+	display:inline;
+	list-style:none;
+}
+ul#footer_nav_list li a {
+	display:inline-block;
+	padding:0.2em 1em;
+	color:#999;
+	text-decoration: none;
+	transition:color 0.2s ease-out;
+	-webkit-transition:color 0.2s ease-out;
+	-moz-transition:color 0.2s ease-out;
+}
+ul#footer_nav_list li a:hover,
+ul#footer_nav_list li.current_page_item a {
+	color:#666;
+}
+
+/* articles */
+
+article {
+	position:relative;
+	padding:2em 0;
+	margin:4em 0;
+	border-top:1px solid #ccc;
+}
+article.page {
+	padding-top:0;
+	border-top:0 none;
+}
+article h1,
+article h2 {
+	text-align: center;
+	margin:1.5em 0;
+}
+article h1 a,
+article h2 a {
+	color:inherit;
+	text-decoration:none;
+}
+article h1 a:hover,
+article h2 a:hover {
+	text-decoration:underline;
+}
+article p {
+	text-align: justify;
+}
+article .entry_date {
+	position:absolute;
+	top:-0.9em;
+	width:100%;
+	text-align: center;
+	color:#999;
+}
+article .entry_date span {
+	background-color:#f3f2ee;
+	padding:0 5px;
+}
+article .details {
+	padding-top:1em;
+	margin-top:1.5em;
+	border-top:1px solid #ccc;
+	color:#999;
+	font-size:0.9em;
+	text-align:center;
+	font-style:italic;
+}
+article .author_info {
+	border:1px solid #ccc;
+	padding:1em;
+	margin:1em 0;
+	background-color: #FAF9F5;
+}
+article .author_info p:last-child {
+	margin-bottom:0;
+}
+article .author_info img {
+	float:left;
+	margin:0 1em 1em 0;
+}
+
+/* comments */
+#comments_holder h2,
+#comments_holder h3#reply-title {
+	text-align:center;
+}
+ol#comments_list {
+	margin:0;
+	padding:0;
+}
+ol#comments_list li {
+	margin:0 0 3em 0;
+	padding:0;
+	list-style:none;
+}
+ol#comments_list li img {
+	position:relative;
+	top:-0.5em;
+	float:right;
+}
+ol#comments_list li .comment-meta {
+	position:relative;
+	top:1em;
+	margin:0;
+	text-align:center;
+	border-top:1px solid #ccc;
+}
+ol#comments_list li .comment-meta a {
+	position:relative;
+	top:-1em;
+	padding:0 5px;
+	background-color:#f3f2ee;
+	color:#999;
+	text-decoration:none;
+}
+ol#comments_list li em.comment-awaiting-moderation {
+	display:block;
+	margin-bottom:-1em;
+	background-color:#ffe;
+	text-align:center;
+}
+/* comment form */
+form#commentform {
+	margin-bottom: 3em;
+}
+form#commentform p.comment-form-author,
+form#commentform p.comment-form-email,
+form#commentform p.comment-form-url {
+	float:left;
+	width:32%;
+	margin-right:2%;
+}
+form#commentform p.comment-form-url {
+	margin-right:0;
+}
+form#commentform p.comment-form-author input,
+form#commentform p.comment-form-email input,
+form#commentform p.comment-form-url input {
+	width:96%;
+}
+form#commentform p.comment-form-comment textarea {
+	width:99%;
+}
+form#commentform p.allowed-html {
+	font-size:0.9em;
+}
+@media only screen and (max-width:36em) {
+	form#commentform p.comment-form-author,
+	form#commentform p.comment-form-email,
+	form#commentform p.comment-form-url {
+		float:none;
+		width:auto;
+		margin-right:0;
+	}
+}
+
+/* general form styles */
+form label {
+	font-weight:bold;
+}
+input[type=text],
+input[type=password],
+textarea,
+select,
+input[type="submit"],
+input[type="button"],
+button {
+	font-family:'Lora', Georgia, serif;
+	font-size:1em;
+	line-height:1.5em;
+}
+input[type="submit"],
+input[type="button"],
+button {
+	padding:0.5em 0.8em;
+	background-color:#333;
+	border:0 none;
+	color:#fff;
+	cursor:pointer;
+	transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover {
+	background-color:#444;
+	box-shadow:inset 0 0 1.5em #111;
+}
+
+/* footer "sidebar" */
+#prefooter {
+	margin-bottom:3em;
+}
+#prefooter .widget {
+	float:left;
+	width:32%;
+	margin-right:2%;
+}
+#prefooter .widget:nth-child(3n) {
+	margin-right:0;
+}
+#prefooter .widget h2 {
+	font-size:1.2em;
+	border-bottom:1px solid #ccc;
+}
+#prefooter .widget ul {
+	margin:0;
+	padding:0;
+}
+#prefooter .widget ul li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#prefooter .widget #searchform #s {
+	width:96%;
+}
+#prefooter:after {
+	content:" ";
+	display:block;
+	clear:left;
+	height:0;
+	overflow:hidden;
+}
+@media only screen and (max-width:36em) {
+	#prefooter .widget {
+		float:none;
+		width:auto;
+		margin-right:0;
+		margin-bottom:1em;
+	}
+}
+
+/* pagination & directionals */
+#directional_links {
+	margin-bottom:3em;
+	border-top:1px solid #ccc;
+	height:2.7em;
+}
+#directional_links a {
+	display:block;
+	width:50%;
+	padding:0.5em 0;
+}
+#directional_links a[rel=prev] {
+	float:left;
+}
+#directional_links a[rel=next] {
+	float:right;
+	text-align: right;
+}
