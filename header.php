@@ -25,12 +25,12 @@
 <!-- stylesheet -->
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-
-
 <!-- make html5 work for pre ie9 -->
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
